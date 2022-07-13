@@ -1,0 +1,110 @@
+.profile {
+    display: flex;
+}
+.mainheading h1 {
+    // width: 194px;
+    // height: 47px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 40px;
+    // line-height: 47px;
+    margin-left: 29px;
+
+}
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 112.5rem 81.25rem;
+
+}
+
+.main h1 {
+
+    position: absolute;
+    width: 15.25rem;
+    height: 2.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #1E1E1E;    ;
+    padding-bottom: 1.5625rem;
+    top: 2.25rem;
+    
+
+}
+
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    height: 31.25rem;
+    width: 53.125rem;
+    padding: 6.625rem 3.125rem;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    color: #1E1E1E;
+    
+    
+}
+
+.content form .user-details {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.25rem 0 2.25rem 0;
+}
+
+form .user-details .input-box {
+
+    margin-bottom: .3125rem;
+    width: calc(100% / 2 - 2.5rem);
+
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: .3125rem;
+    padding-left: 1.5625rem;
+
+}
+
+.user-details .input-box input {
+
+    height: 3.125rem;
+    width: 21.875rem;
+    font-size: 1rem;
+    border-radius: .3125rem;
+    padding-left: .9375rem;
+    background: transparent;
+    border-color: #D4D4D4;
+    color: #901818;
+
+
+}
+
+.user-details .input-box span {
+    color: rgb(255, 0, 0);
+}
+
+
+::-webkit-input-placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #000000;
+
+}
+

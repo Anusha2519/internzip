@@ -1,0 +1,39 @@
+.dashboard {
+    display: flex;
+    
+}
+.mainheading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.25rem 0 1.25rem 0;
+
+}
+.mainheading h1 {
+
+    color: #0A376E;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 29px;
+}
+
+.heading {
+    display: grid;
+    // row-gap: 50px;
+    // grid-template-columns: auto auto;
+    // padding: 10px;
+}
+
+.cards {
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: auto auto auto auto;
+    padding: 1.9375rem 1.0323rem 75rem;
+    background: #FFFFFF;
+border-radius: 5px;
+
+
+
+}
+
