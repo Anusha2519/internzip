@@ -12,13 +12,11 @@ import {RadioButtonModule} from 'primeng/radiobutton';
 import {ToastModule} from 'primeng/toast';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
+import { AccountRoutingModule } from './account-routing.module';
 
-
+console.warn("account module")
 @NgModule({
-  declarations: [
-    RegisterComponent,
-    LoginComponent
-  ],
+  declarations: [RegisterComponent,LoginComponent],
   imports: [
     CommonModule,
     InputTextModule,
@@ -29,7 +27,9 @@ import {MessageModule} from 'primeng/message';
     MessageModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
-  ]
+    RouterModule,
+    AccountRoutingModule
+  ],
+  
 })
 export class AccountModule { }

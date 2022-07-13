@@ -1,48 +1,78 @@
 <div class="dashboard">
-    <div class="sidebar">
+    <div>
         <app-sidebar></app-sidebar>
     </div>
     <div class="heading">
-    <div class="mainheading">
-        <h1>Dashboard</h1>
-        <i class="pi pi-bell" style="font-size: 1.3rem"></i>
+        <div class="mainheading">
+            <h1>Dashboard</h1>
+            <i class="pi pi-bell"></i>
+
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p-card header="2,223,214" subheader="Total view" styleClass="p-card-shadow">
+                    <ng-template pTemplate="header">
+                    </ng-template>
+                </p-card>
+            </div>
+            <div class="card">
+                <p-card header="1,312,022" subheader="Total Download" styleClass="p-card-shadow">
+                    <ng-template pTemplate="header">
+                    </ng-template>
+                </p-card>
+
+            </div>
+            <div class="card">
+                <p-card header="1,959,453" subheader="Total Read" styleClass="p-card-shadow">
+                    <ng-template pTemplate="header">
+                    </ng-template>
+                </p-card>
+            </div>
+            <div class="card">
+                <p-card header="234,032" subheader="Total comments" styleClass="p-card-shadow">
+                    <ng-template pTemplate="header">
+                    </ng-template>
+                </p-card>
+            </div>
+
+        </div>
+        <div class="view">
+            <h3>View Statistic</h3>
+
+            <p-calendar dateFormat="dd.mm.yy" styleClass="p-card-color"></p-calendar><i class="pi pi-calendar-minus" >Yesterday</i>
+            <!-- <i>Yesterday</i> -->
+            <!-- <p-calendar  [showIcon]="true" inputId="icon"></p-calendar> -->
+
+
+        </div>
+        <div class="graph">
+            <p-chart type="line" width="1184px" height="144px" [data]="basicData" [options]="basicOptions"></p-chart>
+        </div>
+        <div class="view">
+            <h3>Users</h3>
+            <span class="pi">See more</span>
+        </div>
+        <div class="card">
+            <p-card header="Charles Philip" subheader="Total view" styleClass="p-card-border">
+                <ng-template pTemplate="header">
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="card">
+            <p-card header="U Christin" subheader="Total Download" styleClass="p-card-border">
+                <ng-template pTemplate="header">
+                </ng-template>
+            </p-card>
+
+        </div>
+        <div class="card">
+            <p-card header="Robert Hillington" subheader="Total Read" styleClass="p-card-border">
+                <ng-template pTemplate="header">
+                </ng-template>
+            </p-card>
+        </div>
 
     </div>
-    <div class="cards">
-        <div class="card">
-            <p-card header="2,223,214" subheader="Total view" [style]="{width: '200px', height: '97px', color: '#000000'}" styleClass="p-card-shadow">
-                <ng-template pTemplate="header">
-                </ng-template> 
-            </p-card>
-        </div>
-        <div class="card">
-            <p-card header="1,312,022" subheader="Total Download" [style]="{width: '200px', height: '97px', color: '#000000'}" styleClass="p-card-shadow">
-                <ng-template pTemplate="header">
-                </ng-template>
-            </p-card>
-    
-        </div>
-        <div class="card">
-            <p-card header="1,959,453" subheader="Total Read" [style]="{width: '200px', height: '97px', color: '#000000'}" styleClass="p-card-shadow">
-                <ng-template pTemplate="header">
-                </ng-template>
-            </p-card>
-        </div>
-        <div class="card">
-            <p-card header="234,032" subheader="Total comments" [style]="{width: '200px', height: '97px', color: '#000000'}" styleClass="p-card-shadow">
-                <ng-template pTemplate="header">
-                </ng-template>
-            </p-card>
-        </div>
-        <div class="card">
-            <p-card header="234,032" subheader="Total comments" [style]="{width: '200px', height: '97px', color: '#000000'}" styleClass="p-card-shadow">
-                <ng-template pTemplate="header">
-                </ng-template>
-            </p-card>
-        </div>
 
-    </div>
-    
-</div>
 
 </div>

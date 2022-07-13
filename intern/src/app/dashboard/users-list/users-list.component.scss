@@ -1,11 +1,48 @@
 .user {
     display: flex;
+    
 }
+// .view {
+     
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+// }
+
 .mainheading h1 {
     color: #000000;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    margin-left: 29px;
+    margin-left: 1.8125rem;
 
+}
+
+.table {
+    margin-left: 3.75rem;
+    margin-top: 7.5rem;
+    width: 77.375rem;
+    height: 38.125rem;
+    border: .0625rem solid #D4D4D4;
+    border-radius: .5rem;
+
+}
+
+.pi {
+
+    color: #1473E6;
+    padding-top: 30px;
+
+
+}
+.view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem;
+    padding: 0rem 1.0323rem 1rem;
+    background: #FFFFFF;
+    /* color-gray-200 */
+
+    border-radius: 4px;
 }

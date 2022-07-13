@@ -4,18 +4,22 @@
     </div>
     <div class="mainheading">
         <h1>Profile</h1>
+
         <div class="main">
-            <h1>John Marshall</h1>
+
+            <label>John Marshall</label>
             <div class="container">
                 <div class="content">
                     <form [formGroup]="registerform" (ngSubmit)="onSubmit()">
+                        <h3>Edit Profile</h3>
+
                         <div class="user-details">
                             <div class="input-box">
                                 <h5>First Name</h5>
                                 <input type="text" formControlName="firstName" placeholder="John" pInputText>
                                 <div
                                     *ngIf="registerform.controls['firstName'].touched && !registerform.controls['firstName'].valid ">
-        
+
                                     <span *ngIf="registerform.controls['firstName'].hasError('required') ">
                                         First name is required
                                     </span>
@@ -27,71 +31,59 @@
                                     </span>
                                 </div>
                             </div>
-        
+
                             <div class="input-box">
                                 <h5>Last Name</h5>
-                                <input type="text" placeholder="marshall" pInputText>
+                                <input type="text" placeholder="Marshall" pInputText>
                                 <span class="ml-2"></span>
                             </div>
-                            <div class="input-box">
-                                <h5>Phone Number</h5>
-                                <input type="number" placeholder="9876543210" pInputText>
-                                <span class="ml-2"></span>
-                            </div>
+                        </div>
+                        <div class="user-details1">
                             <div class="input-box">
                                 <h5>Email</h5>
-                                <input type="text" formControlName="email" placeholder="John.marshall@gmail.com" pInputText>
-                                <span *ngIf="registerform.controls['email'].touched && !registerform.controls['email'].valid ">
-        
+                                <input type="text" formControlName="email" placeholder="John.marshall@gmail.com"
+                                    pInputText>
+                                <span
+                                    *ngIf="registerform.controls['email'].touched && !registerform.controls['email'].valid ">
+
                                     <span *ngIf="registerform.controls['email'].hasError('required') ">
                                         Email is required
                                     </span>
                                     <span *ngIf="registerform.controls['email'].hasError('email') ">
                                         Email is invalid
                                     </span>
-        
+
                                 </span>
                             </div>
-                            <div class="input-box">
-                                <h5>Password</h5>
-        
-                                <input type="password" formControlName="password" placeholder="**********" pInputText>
-                                <div
-                                    *ngIf="registerform.controls['password'].touched && !registerform.controls['password'].valid ">
-        
-                                    <span *ngIf="registerform.controls['password'].hasError('required') ">
-                                        Password is required
-                                    </span>
-                                    <span *ngIf="registerform.controls['password'].hasError('minlength') ">
-                                        Password must be at least 8 characters
-                                    </span>
-                                    <span *ngIf="registerform.controls['password'].hasError('maxlength') ">
-                                        Password must be max length is 15
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="input-box">
-                                <h5>Confirm Password</h5>
-                                <input type="password" formControlName="confirmPassword" placeholder="**********" pInputText>
-                                <div
-                                    *ngIf="registerform.controls['confirmPassword'].touched && !registerform.controls['password'].valid ">
-        
-                                    <span *ngIf="registerform.controls['confirmPassword'].hasError('required') ">
-                                        Confirm Password is required </span>
-                                    <span
-                                        *ngIf="registerform.controls['confirmPassword'].touched && registerform.controls['password'].value!=registerform.controls['confirmPassword'].value">
-                                        Password is required mismatch
-                                    </span>
-        
-                                </div>
-                            </div>
                         </div>
-        
-                        
+                        <div class="user-details">
+                            <div class="input-box">
+                                <h5>Mobile Number</h5>
+                                <input type="number" placeholder="+1(415)456 7890" pInputText>
+                                <span class="ml-2"></span>
+                            </div>
+                            <div class="input-box">
+                                <h5>Pincode Address</h5>
+
+                                <input type="pincode" formControlName="pincode" placeholder="0001895" pInputText>
+
+
+                            </div>
+
+                        </div>
+
+
                     </form>
+
                 </div>
-        
+
             </div>
+        </div>
+        <div class="button">
+            <p-toast position="top-left"></p-toast>
+
+            <p-button type="Submit" label="Create Account" value="btn"styleClass="button"></p-button>
+
         </div>
     </div>
 </div>

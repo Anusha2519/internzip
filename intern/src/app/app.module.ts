@@ -18,14 +18,17 @@ import { MessageModule } from 'primeng/message';
 import { DashboardModule } from './dashboard/dashboard.module';
 import {CardModule} from 'primeng/card';
 import {ChartModule} from 'primeng/chart';
+import {CalendarModule} from 'primeng/calendar';
 
-// import {TableModule} from 'primeng/table';
+
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     
 
   ],
@@ -46,8 +49,9 @@ import {ChartModule} from 'primeng/chart';
     DashboardModule,
     CardModule,
     ChartModule,
+    CalendarModule,
+  
     RouterModule,
-    // TableModule
     
 
 

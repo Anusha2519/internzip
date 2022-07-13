@@ -17,10 +17,14 @@ import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {CardModule} from 'primeng/card';
 import {ChartModule} from 'primeng/chart';
+import {CalendarModule} from 'primeng/calendar';
+import { DashboardRoutingModule } from './dashboard-routing.module';
+import {TableModule} from 'primeng/table';
 
-// import {TableModule} from 'primeng/table';
 
 
+
+console.warn("dashboard module loaded")
 
 @NgModule({
   declarations: [
@@ -31,7 +35,7 @@ import {ChartModule} from 'primeng/chart';
   ],
   imports: [
     CommonModule,
-    // TableModule,
+    TableModule,
     InputTextModule,
     ButtonModule,
     RadioButtonModule,
@@ -42,7 +46,10 @@ import {ChartModule} from 'primeng/chart';
     ReactiveFormsModule,
     CardModule,
     ChartModule,
-    RouterModule
+    CalendarModule,
+    RouterModule,
+    DashboardRoutingModule
   ]
+
 })
 export class DashboardModule { }

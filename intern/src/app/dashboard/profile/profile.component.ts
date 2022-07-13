@@ -22,20 +22,8 @@ export class ProfileComponent implements OnInit {
       Validators.required,
       Validators.email,
     ]),
-    password: new FormControl('', [
-      Validators.required,
-      Validators.minLength(8),
-      Validators.maxLength(15),
-    ]),
-    confirmPassword: new FormControl('', [
-      Validators.required,
-      
-    ]),
 
-    control: new FormControl('', [
-      Validators.required,
-
-    ])
+    control: new FormControl('', [])
 
   });
 
