@@ -1,6 +1,41 @@
 .profile {
     display: flex;
 }
+.header {
+    display: flex;
+    // margin-left: rem;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    margin-left: 650px;
+}
+.images img {
+    height: 40px;
+    width: 40px;
+    margin-left: 400px;
+
+}
+
+.images {
+    display: flex;
+    margin-left: 1000px;
+}
+
+.bell {
+    // margin-left: 500px;
+    margin-top: 10px;
+    color: #0A376E;
+    border: 1px solid #F5F5F5;
+    margin-left: 20px;
+
+}
 
 .mainheading h1 {
     color: #000000;
@@ -17,16 +52,16 @@
     margin-top: 10vh;
     
     border: 3px solid #D4D4D4;
-    margin-left: 70px;
+    margin-left: 80px;
     height: 600px;
-    width: 1150px;
+    width: 1500px;
 
 
 
 }
 .mainheading h3 {
-    margin-left: -60px;
-    margin-top: -4rem;
+    margin-left: 240px;
+    margin-top: -14rem;
 
 
 }
@@ -36,12 +71,10 @@
 }
 
 .main label {
-    margin-left: 19rem;
-
-
+    margin-left: 38rem;
     position: absolute;
     width: 15rem;
-    height: 6rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,16 +108,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 50px;
-    margin-top: 80px;
+    margin-left: 600px;
+    margin-top: 120px;
 
     
 
 }
 .content form .user-details1 {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 600px;
 
+
+}
+.content form .user-details2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 600px;
+    margin-top: 20px;
+
+    
 
 }
 .user-details1 .input-box input {
@@ -95,9 +138,15 @@
     background: transparent;
     border-color: #D4D4D4;
     color: #000000;
+    border: 0.5px solid #1E1E1E;
 
 }
 form .user-details .input-box {
+
+    width: calc(100% / 2 - 2rem);
+
+}
+form .user-details2 .input-box {
 
     width: calc(100% / 2 - 2rem);
 
@@ -119,6 +168,20 @@ form .input-box span.details {
     background: transparent;
     border-color: #D4D4D4;
     color: #000000;
+    border: 0.5px solid #1E1E1E;
+
+
+}
+.user-details2 .input-box input {
+
+    height: 3rem;
+    width: 18rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    background: transparent;
+    border-color: #D4D4D4;
+    color: #000000;
+    border: 0.5px solid #1E1E1E;
 
 
 }
@@ -138,14 +201,15 @@ form .input-box span.details {
     color: #1E1E1E;
 
 }
-button.button {
-    background-color: #0AA6FE;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    margin-left: 1050px;
-    margin-top: 2rem;
-    height: 2.5rem;
-    width: 11rem;
-}
+:host::ng-deep.p-button{
 
+    height: 50px;
+    width: 347px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    
+  
+    // margin-left: 210px;
+    background-color: #0AA6FE;
+}

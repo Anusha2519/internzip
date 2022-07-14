@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users-list.component.scss']
 })
 export class UsersListComponent implements OnInit {
+  list=[" Name","EmailAddress","PhoneNumber","DateCreated","PincodeAddress"];
   products: Product[] = [];
   constructor(  ) { }
 

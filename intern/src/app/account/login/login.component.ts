@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 
@@ -7,7 +7,7 @@ import { MessageService } from 'primeng/api';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
   providers: [MessageService],
-  encapsulation: ViewEncapsulation.None
+  // encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 

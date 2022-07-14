@@ -101,14 +101,18 @@ form .user-details .input-box {
 
 }
 
-button.button {
+
+:host::ng-deep.p-button{
+
+    height: 50px;
+    width: 347px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    
+  
+    margin-left: 210px;
     background-color: #0AA6FE;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    margin: 0rem 12.5rem;
-    height: 3rem;
-    width: 22rem;
 }
 
 

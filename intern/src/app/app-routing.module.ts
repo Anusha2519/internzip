@@ -7,12 +7,14 @@ const routes: Routes = [
 
 
 
-  {path:"account", loadChildren:()=>import('./account/account.module')
-.then(mod=>mod.AccountModule)
-},
-{path:"dashboard", loadChildren:()=>import('./dashboard/dashboard.module')
-.then(mod=>mod.DashboardModule)
-}
+  {
+    path: "account", loadChildren: () => import('./account/account.module')
+      .then(mod => mod.AccountModule)
+  },
+  {
+    path: "dashboard", loadChildren: () => import('./dashboard/dashboard.module')
+      .then(mod => mod.DashboardModule)
+  }
 
 ];
 
