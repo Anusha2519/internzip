@@ -3,10 +3,24 @@
         <app-sidebar></app-sidebar>
     </div>
     <div class="mainheading">
-        <h1>Profile</h1>
+        <div class="header">
+            <div class="heading">
+                <h2>Profile</h2>
+            </div>
+            <div class="images">
+                <div class="bell">
+                    <i class="pi pi-bell"></i>
+                </div>
+                <div>
+                    <img src="/assets/girl icon.jpg">
+                </div>
+            </div>
+        </div>
 
         <div class="main">
-
+            <div class="picture">
+                <img src="/assets/girl icon.jpg">
+            </div>
             <label>John Marshall</label>
             <div class="container">
                 <div class="content">
@@ -56,7 +70,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="user-details">
+                        <div class="user-details2">
                             <div class="input-box">
                                 <h5>Mobile Number</h5>
                                 <input type="number" placeholder="+1(415)456 7890" pInputText>
@@ -71,7 +85,13 @@
                             </div>
 
                         </div>
-
+                        <div class="enter">
+                           <p-button label="Submit"></p-button>
+                            <p-toast position="top-right"></p-toast>
+                
+                           
+                
+                        </div>
 
                     </form>
 
@@ -79,11 +99,6 @@
 
             </div>
         </div>
-        <div class="button">
-            <p-toast position="top-left"></p-toast>
-
-            <p-button type="Submit" label="Create Account" value="btn"styleClass="button"></p-button>
-
-        </div>
+        
     </div>
 </div>
