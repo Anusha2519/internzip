@@ -25,12 +25,8 @@
                         <th>
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                        <th  *ngFor="let columns of list">{{columns}}</th>
-                        <!-- <th>Name</th>
-                        <th>Email Address</th>
-                        <th>Phone Number</th>
-                        <th>Date Created</th>
-                        <th>Pincode Address</th> -->
+                        <th *ngFor="let columns of list">{{columns}}</th>
+
                     </tr>
                 </ng-template>
                 <ng-template pTemplate="body" let-product>
@@ -48,20 +44,5 @@
 
             </p-table>
         </div>
-
-
-
     </div>
-
-
 </div>
-
-
-
-
-<!-- <ng-template pTemplate="paginatorleft">
-                    <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
-                </ng-template>
-                <ng-template pTemplate="paginatorright">
-                    <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
-                </ng-template> -->

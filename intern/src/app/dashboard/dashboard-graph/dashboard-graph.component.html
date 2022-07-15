@@ -22,14 +22,18 @@
                     <ng-template pTemplate="header">
                     </ng-template>
                 </p-card>
+
             </div>
+
             <div class="card">
-                <p-card header="1,312,022" subheader="Total Download" styleClass="p-card-shadow"(click)="oncardclick(2.7)">
+                <p-card header="1,312,022" subheader="Total Download" styleClass="p-card-shadow"
+                    (click)="oncardclick(2.7)">
                     <ng-template pTemplate="header">
                     </ng-template>
                 </p-card>
 
             </div>
+
             <div class="card">
                 <p-card header="1,959,453" subheader="Total Read" styleClass="p-card-shadow" (click)="oncardclick(3.3)">
                     <ng-template pTemplate="header">
@@ -37,7 +41,8 @@
                 </p-card>
             </div>
             <div class="card">
-                <p-card header="234,032" subheader="Total comments" styleClass="p-card-shadow" (click)="oncardclick(1.1)">
+                <p-card header="234,032" subheader="Total comments" styleClass="p-card-shadow"
+                    (click)="oncardclick(1.1)">
                     <ng-template pTemplate="header">
                     </ng-template>
                 </p-card>
@@ -51,7 +56,7 @@
                 class="pi pi-calendar-minus">Yesterday</i>
         </div>
         <div class="graph">
-            <p-chart type="line" width="1184px" height="144px" [data]="basicData" [options]="basicOptions"></p-chart>
+            <p-chart width="1500px" height="200px" type="line" [data]="basicData" [options]="basicOptions"></p-chart>
         </div>
         <div class="view">
             <div>
@@ -60,20 +65,32 @@
             <div>
                 <span class="pi">See more</span>
             </div>
+
         </div>
+        <div class="line">
+            <hr>
+        </div>
+
         <div class="table">
+
             <p-table [value]="products" responsiveLayout="scroll">
                 <ng-template pTemplate="header">
 
                 </ng-template>
                 <ng-template pTemplate="body" let-product>
+
                     <tr>
-                        <td>{{product.Name}}</td>
+
+                        <td>
+                            <p-avatar styleClass="p-mr-2" size="large" shape="circle">
+                                {{product.label}}</p-avatar>{{product.Name}}
+                        </td>
 
                     </tr>
                 </ng-template>
 
             </p-table>
+
         </div>
 
     </div>

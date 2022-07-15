@@ -7,7 +7,6 @@ import { MessageService } from 'primeng/api';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
   providers: [MessageService],
-  // encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 
@@ -16,7 +15,7 @@ export class LoginComponent implements OnInit {
       Validators.required,
       Validators.email,
     ]),
-    
+
     password: new FormControl('', [
       Validators.required,
       Validators.minLength(8),
@@ -30,7 +29,6 @@ export class LoginComponent implements OnInit {
   });
 
   constructor(
-    // private primengConfig: PrimeNGConfig, 
     private messageService: MessageService
   ) { }
 

@@ -7,28 +7,33 @@ import { MessageService } from 'primeng/api';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
   providers: [MessageService],
-  // encapsulation: ViewEncapsulation.None
 })
 export class ProfileComponent implements OnInit {
 
   value = 'btn'
-  registerform = new FormGroup({
+  profileform = new FormGroup({
     firstName: new FormControl('', [
       Validators.required,
       Validators.minLength(1),
       Validators.maxLength(15)]),
-    
+
     email: new FormControl('', [
       Validators.required,
       Validators.email,
     ]),
+    lastName: new FormControl('', [
 
-    control: new FormControl('', [])
+    ]),
+    mobileNumber: new FormControl('', [
+
+    ]),
+    pincodeAddress: new FormControl('', [
+
+    ]),
 
   });
 
   constructor(
-    // private primengConfig: PrimeNGConfig, 
     private messageService: MessageService
   ) { }
 
@@ -36,9 +41,9 @@ export class ProfileComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.registerform.value);
-    this.registerform.markAllAsTouched()
-    if (this.registerform.valid) {
+    console.log(this.profileform.value);
+    this.profileform.markAllAsTouched()
+    if (this.profileform.valid) {
       this.messageService.add({
         severity: 'success', summary: 'Success', detail: 'Submitted',
       });

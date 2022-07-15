@@ -21,10 +21,6 @@ import {ChartModule} from 'primeng/chart';
 import {CalendarModule} from 'primeng/calendar';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +46,6 @@ import {CalendarModule} from 'primeng/calendar';
     CardModule,
     ChartModule,
     CalendarModule,
-  
     RouterModule,
     
 

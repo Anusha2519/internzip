@@ -20,6 +20,7 @@ import {ChartModule} from 'primeng/chart';
 import {CalendarModule} from 'primeng/calendar';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import {TableModule} from 'primeng/table';
+import {AvatarModule} from 'primeng/avatar';
 
 
 
@@ -47,6 +48,7 @@ console.warn("dashboard module loaded")
     CardModule,
     ChartModule,
     CalendarModule,
+    AvatarModule,
     RouterModule,
     DashboardRoutingModule
   ]

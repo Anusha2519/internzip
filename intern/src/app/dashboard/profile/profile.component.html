@@ -8,10 +8,9 @@
                 <h2>Profile</h2>
             </div>
             <div class="images">
-                <div class="bell">
-                    <i class="pi pi-bell"></i>
-                </div>
                 <div>
+                    <i class="pi pi-bell"></i>
+
                     <img src="/assets/girl icon.jpg">
                 </div>
             </div>
@@ -24,7 +23,7 @@
             <label>John Marshall</label>
             <div class="container">
                 <div class="content">
-                    <form [formGroup]="registerform" (ngSubmit)="onSubmit()">
+                    <form [formGroup]="profileform" (ngSubmit)="onSubmit()">
                         <h3>Edit Profile</h3>
 
                         <div class="user-details">
@@ -32,15 +31,15 @@
                                 <h5>First Name</h5>
                                 <input type="text" formControlName="firstName" placeholder="John" pInputText>
                                 <div
-                                    *ngIf="registerform.controls['firstName'].touched && !registerform.controls['firstName'].valid ">
+                                    *ngIf="profileform.controls['firstName'].touched && !profileform.controls['firstName'].valid ">
 
-                                    <span *ngIf="registerform.controls['firstName'].hasError('required') ">
+                                    <span *ngIf="profileform.controls['firstName'].hasError('required') ">
                                         First name is required
                                     </span>
-                                    <span *ngIf="registerform.controls['firstName'].hasError('minlength') ">
+                                    <span *ngIf="profileform.controls['firstName'].hasError('minlength') ">
                                         Min length is 1
                                     </span>
-                                    <span *ngIf="registerform.controls['firstName'].hasError('maxlength') ">
+                                    <span *ngIf="profileform.controls['firstName'].hasError('maxlength') ">
                                         max length is 15
                                     </span>
                                 </div>
@@ -48,7 +47,7 @@
 
                             <div class="input-box">
                                 <h5>Last Name</h5>
-                                <input type="text" placeholder="Marshall" pInputText>
+                                <input type="text" formControlName="lastName" placeholder="Marshall" pInputText>
                                 <span class="ml-2"></span>
                             </div>
                         </div>
@@ -58,12 +57,12 @@
                                 <input type="text" formControlName="email" placeholder="John.marshall@gmail.com"
                                     pInputText>
                                 <span
-                                    *ngIf="registerform.controls['email'].touched && !registerform.controls['email'].valid ">
+                                    *ngIf="profileform.controls['email'].touched && !profileform.controls['email'].valid ">
 
-                                    <span *ngIf="registerform.controls['email'].hasError('required') ">
+                                    <span *ngIf="profileform.controls['email'].hasError('required') ">
                                         Email is required
                                     </span>
-                                    <span *ngIf="registerform.controls['email'].hasError('email') ">
+                                    <span *ngIf="profileform.controls['email'].hasError('email') ">
                                         Email is invalid
                                     </span>
 
@@ -73,24 +72,22 @@
                         <div class="user-details2">
                             <div class="input-box">
                                 <h5>Mobile Number</h5>
-                                <input type="number" placeholder="+1(415)456 7890" pInputText>
+                                <input type="number" formControlName="mobileNumber" placeholder="+1(415)456 7890"
+                                    pInputText>
                                 <span class="ml-2"></span>
                             </div>
                             <div class="input-box">
                                 <h5>Pincode Address</h5>
 
-                                <input type="pincode" formControlName="pincode" placeholder="0001895" pInputText>
-
-
+                                <input type="pincode" formControlName="pincodeAddress" placeholder="0001895" pInputText>
                             </div>
 
                         </div>
-                        <div class="enter">
-                           <p-button label="Submit"></p-button>
+                        <div class="btn">
                             <p-toast position="top-right"></p-toast>
-                
-                           
-                
+
+                            <p-button type="Submit" label="Save"></p-button>
+
                         </div>
 
                     </form>
@@ -99,6 +96,6 @@
 
             </div>
         </div>
-        
+
     </div>
 </div>

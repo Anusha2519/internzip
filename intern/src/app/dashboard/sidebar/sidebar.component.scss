@@ -1,55 +1,45 @@
 .vl {
-    border-right: 1px solid rgb(218, 216, 216);
-    height: 980px;
-    width: 241px;
+    border-right: .0625rem solid rgb(218, 216, 216);
+    height: 62rem;
+    width: 15rem;
 
 }
 
 .sidebar-brand {
 
     color: #0A376E;
-    padding-left: 2.0rem;
-    padding-top: 1px;
+    padding-left: 2rem;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 99px;
+    padding-bottom: 6rem;
 }
 
 .sidebar-menu dl {
 
-    padding: 8px 94.03px;
+    padding: .5rem 6rem;
 
 }
-
+.dashboard{
+    display: flex;
+    padding: .5rem 6rem;
+}
+.users{
+    display: flex;
+    align-items: center;
+    margin-left: 91px;
+}
 .sidebar-menu span {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: #000000;
 }
 
 .sidebar-menu a {
     display: block;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
-// .button {
-//     // padding: 10px 10px;
-//     // text-align: center;
-//     // cursor: pointer;
-//     outline: none;
-//     color: #fff;
-//     border: none;
-//     border-radius: 15px;
-//     font-size: 1rem;
-//     height: 3rem;
-//     width: 2px;
-//     // box-shadow: 0 9px #999;
-//   }
-//   .button:hover {background-color: #0AA6FE}
 
-// .button:active {
-//   background-color: #1c0fab;
-//   box-shadow: 0 px #666;
-//   transform: translateY(4px);
-// }
+
+

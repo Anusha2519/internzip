@@ -68,16 +68,16 @@
                     <div class="input-box">
                         <h5>Confirm Password</h5>
                         <input type="password" formControlName="confirmPassword" placeholder="**********" pInputText>
-                        <div
-                            *ngIf="registerform.controls['confirmPassword'].touched && !registerform.controls['password'].valid ">
+                        <div>
 
-                            <span *ngIf="registerform.controls['confirmPassword'].hasError('required') ">
-                                Confirm Password is required </span>
                             <span
-                                *ngIf="registerform.controls['confirmPassword'].touched && registerform.controls['password'].value!=registerform.controls['confirmPassword'].value">
-                                Password is required mismatch
+                                *ngIf="!(this.registerform.controls['confirmPassword'].value == this.registerform.controls['password'].value)">
+                                Password is mismatch
                             </span>
-
+                            <span
+                                *ngIf="this.registerform.controls['confirmPassword'].touched && this.registerform.controls['confirmPassword'].invalid">Confirm
+                                Password is
+                                required</span>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="rbutton">
 
                     <div class="field-radiobutton">
-                        <p-radioButton  type="radio" value="btn" formControlName="control">
+                        <p-radioButton type="radio" value="btn" formControlName="control">
                         </p-radioButton>
                         <label for="btn">I agree to Terms & Privacy Policy</label>
                         <div

@@ -8,7 +8,6 @@ import { MessageService } from 'primeng/api';
   templateUrl: './dashboard-graph.component.html',
   styleUrls: ['./dashboard-graph.component.scss'],
   providers: [MessageService],
-  // encapsulation: ViewEncapsulation.None
 })
 export class DashboardGraphComponent implements OnInit {
   basicData: any;
@@ -41,8 +40,8 @@ this.products = tableData;
       labels: ['1', '2', '3', '4', '5', '6', '7'],
       datasets: [
         {
-          label: 'First Dataset',
-          data: [65 * i, 59 + i, 80 / i, 91 - i, 56 + i, 55 * i, 40 - i],
+          label: '',
+          data: [10 * i, 59 + i, 80 / i, 91 - i, 56 + i, 55 * i, 40 - i],
           fill: false,
           borderColor: '#42A5F5',
           tension: 0.4,
@@ -60,20 +59,21 @@ export interface Product {
 const tableData = [
   {
     Name: 'Charles Philip',
-    label: 'CP'
+    label: 'CP',
+    subheader: "18 October 2020"
   },
   {
     Name: 'U Christin',
-    label: 'UC'
+    label: 'UC',
+    subheader: "11 June 2020"
+
   },
   {
     Name: 'Robert Hillington',
-    label: 'RH'
+    label: 'RH',
+    subheader: "21 September 2020"
+
   },
-  // {
-  //   Name: 'Robert C',
-  //   label: 'RC'
-  // },
 ];
 
 

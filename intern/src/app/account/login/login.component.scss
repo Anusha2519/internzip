@@ -6,9 +6,6 @@
     align-items: center;
     background-size: 120rem 80rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-
 }
 
 .main h1 {
@@ -67,8 +64,6 @@
     background: transparent;
     border-color: #ffffff;
     color: #FFFFFF;
-
-
 }
 
 
@@ -98,22 +93,20 @@
     font-size: 1rem;
 
 }
+
 .rbutton span {
     color: rgb(255, 0, 0);
 
 }
 
 
-:host::ng-deep.p-button{
+:host::ng-deep.p-button {
 
-    height: 50px;
-    width: 347px;
-    left: 0px;
-    top: 0px;
-    border-radius: 5px;
-    
-  
-    // margin-left: 210px;
+    height: 3.125rem;
+    width: 21.6875rem;
+    left: 0rem;
+    top: 0rem;
+    border-radius: .3125rem;
     background-color: #0AA6FE;
 }
 

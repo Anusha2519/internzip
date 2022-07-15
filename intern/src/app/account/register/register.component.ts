@@ -7,7 +7,6 @@ import { MessageService } from 'primeng/api';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
   providers: [MessageService],
-  // encapsulation: ViewEncapsulation.None
 })
 export class RegisterComponent implements OnInit {
 
@@ -17,7 +16,7 @@ export class RegisterComponent implements OnInit {
       Validators.required,
       Validators.minLength(1),
       Validators.maxLength(15)]),
-    
+
     email: new FormControl('', [
       Validators.required,
       Validators.email,
@@ -29,7 +28,7 @@ export class RegisterComponent implements OnInit {
     ]),
     confirmPassword: new FormControl('', [
       Validators.required,
-      
+
     ]),
 
     control: new FormControl('', [
@@ -40,7 +39,6 @@ export class RegisterComponent implements OnInit {
   });
 
   constructor(
-    // private primengConfig: PrimeNGConfig, 
     private messageService: MessageService
   ) { }
 

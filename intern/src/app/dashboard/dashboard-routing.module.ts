@@ -1,5 +1,4 @@
 import { NgModule, Component } from '@angular/core';
-// import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardGraphComponent } from './dashboard-graph/dashboard-graph.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -8,7 +7,7 @@ import { UsersListComponent } from './users-list/users-list.component';
 
 const routes: Routes = [
   
-    
+
       { path: 'sidebar', component: SidebarComponent},
       { path: 'dashboard-graph', component: DashboardGraphComponent },
       { path: 'users-list', component: UsersListComponent },
