@@ -19,7 +19,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import {CardModule} from 'primeng/card';
 import {ChartModule} from 'primeng/chart';
 import {CalendarModule} from 'primeng/calendar';
-
+// import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,6 +46,7 @@ import {CalendarModule} from 'primeng/calendar';
     CardModule,
     ChartModule,
     CalendarModule,
+    // HttpClientModule,
     RouterModule,
     
 

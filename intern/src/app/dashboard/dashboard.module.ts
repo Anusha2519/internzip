@@ -21,6 +21,9 @@ import {CalendarModule} from 'primeng/calendar';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import {TableModule} from 'primeng/table';
 import {AvatarModule} from 'primeng/avatar';
+import { DividerModule } from 'primeng/divider';
+import { CallComponent } from './call/call.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -32,7 +35,8 @@ console.warn("dashboard module loaded")
     SidebarComponent,
     DashboardGraphComponent,
     ProfileComponent,
-    UsersListComponent
+    UsersListComponent,
+    CallComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +53,9 @@ console.warn("dashboard module loaded")
     ChartModule,
     CalendarModule,
     AvatarModule,
+    DividerModule,
     RouterModule,
+    HttpClientModule,
     DashboardRoutingModule
   ]
 

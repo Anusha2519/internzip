@@ -79,7 +79,7 @@ img {
 
 :host::ng-deep.p-calendar {
     height: 0rem;
-    width: 0rem;
+    width: 3rem;
     margin-left: 75rem;
     margin-top: .625rem;
 
@@ -88,10 +88,9 @@ img {
 
 :host::ng-deep.p-card-shadow {
 
-    height: 5.625rem;
+    height: 7.625rem;
     width: 12.5rem;
     color: #000000;
-
     left: 0rem;
 
 }
@@ -110,4 +109,3 @@ img {
 
 }
 
-;

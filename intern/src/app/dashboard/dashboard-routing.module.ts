@@ -4,6 +4,7 @@ import { DashboardGraphComponent } from './dashboard-graph/dashboard-graph.compo
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsersListComponent } from './users-list/users-list.component';
+import { CallComponent } from './call/call.component';
 
 const routes: Routes = [
   
@@ -11,8 +12,9 @@ const routes: Routes = [
       { path: 'sidebar', component: SidebarComponent},
       { path: 'dashboard-graph', component: DashboardGraphComponent },
       { path: 'users-list', component: UsersListComponent },
-      { path: 'profile', component: ProfileComponent}
-  
+      { path: 'profile', component: ProfileComponent},
+      { path: 'call', component: CallComponent}
+
     
   
 ];
