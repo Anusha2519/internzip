@@ -1,0 +1,217 @@
+.profile {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    margin-top: .625rem;
+    margin-left: 1rem;
+
+}
+
+img {
+    height: 10rem;
+    width: 10rem;
+    margin-left: 41rem;
+}
+
+.images img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 2rem;
+    margin-top: .625rem;
+
+}
+
+.pi {
+    margin-top: .625rem;
+    color: #0A376E;
+    border: .0625rem solid #F5F5F5;
+
+}
+.images {
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.images .bell {
+    margin-right: .5rem;
+    margin-top: .6rem;
+}
+
+.mainheading h1 {
+    color: #000000;
+    font-style: normal;
+    font-weight: 100;
+    margin-left: 2.5rem;
+
+}
+
+.mainheading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.main {
+    margin-top: 10vh;
+
+    border: .1875rem solid #D4D4D4;
+    margin-left: 5rem;
+    height: 37.5rem;
+    width: 85.5rem;
+}
+
+.mainheading h3 {
+    margin-left: 15rem;
+    margin-top: -14rem;
+
+}
+
+.input-box h5 {
+    font-size: .875rem;
+    color: #3e3e3e;
+}
+
+.main label {
+    margin-left: 38rem;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .875rem;
+    color: #1E1E1E;
+    padding-bottom: 1rem;
+    top: 16rem;
+
+
+}
+
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    height: 31rem;
+    width: 53rem;
+    padding: 5rem 1rem 0;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    color: #1E1E1E;
+
+
+}
+
+.content form .user-details {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 37.5rem;
+    margin-top: 9.3rem;
+
+}
+
+.content form .user-details1 {
+    margin-left: 37.5rem;
+}
+
+.content form .user-details2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 37.5rem;
+    margin-top: .6rem;
+}
+
+.user-details1 .input-box input {
+    height: 3rem;
+    width: 40rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    background: transparent;
+    border-color: #D4D4D4;
+    color: #000000;
+    border: .0313rem solid #1E1E1E;
+
+}
+
+form .user-details .input-box {
+
+    width: calc(100% / 2 - 2rem);
+
+}
+
+form .user-details2 .input-box {
+
+    width: calc(100% / 2 - 2rem);
+
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    padding-left: 2rem;
+
+}
+
+.user-details .input-box input {
+
+    height: 3rem;
+    width: 18rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    background: transparent;
+    border-color: #D4D4D4;
+    color: #000000;
+    border: .0313rem solid #1E1E1E;
+
+
+}
+
+.user-details2 .input-box input {
+
+    height: 3rem;
+    width: 18rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    background: transparent;
+    border-color: #D4D4D4;
+    color: #000000;
+    border: .0313rem solid #1E1E1E;
+
+
+}
+
+.user-details .input-box span {
+    color: rgb(255, 0, 0);
+}
+
+.user-details1 .input-box span {
+    color: rgb(255, 0, 0);
+}
+
+::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #1E1E1E;
+
+}
+
+:host::ng-deep.p-button {
+
+    height: 2.625rem;
+    width: 11rem;
+    left: 89rem;
+    top: 6.25rem;
+    border-radius: .3125rem;
+    background-color: #0AA6FE;
+}
