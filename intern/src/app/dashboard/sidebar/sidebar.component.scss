@@ -13,20 +13,18 @@
     padding-bottom: 6rem;
 }
 
-.sidebar-menu dl {
 
-    padding: .5rem 6rem;
-
-}
-.dashboard{
+.dashboard {
     display: flex;
-    padding: .5rem 6rem;
+    padding: .5rem 4rem;
 }
-.users{
+
+.users {
     display: flex;
     align-items: center;
     margin-left: 91px;
 }
+
 .sidebar-menu span {
     font-style: normal;
     font-weight: 400;
@@ -40,15 +38,21 @@
     color: black;
     font-size: 1rem;
 }
+
 .active-link {
     cursor: pointer;
-     background-color: #0AA6FE;
-    
-  }
-  .dashboard:hover {
+    background-color: #0AA6FE;
+    height: 2rem;
+    width: 1px;
+    border-radius: 50px;
+    // padding: 0rem 5rem;
+
+}
+
+.dashboard:hover {
     cursor: pointer;
-    background-color: #e8edf5;
-  }
-  
-
-
+    background-color: #dbe6f8;
+    height: 2rem;
+    width: 10px;
+    border-radius: 50px;
+}

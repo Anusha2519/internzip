@@ -24,6 +24,7 @@ import {AvatarModule} from 'primeng/avatar';
 import { DividerModule } from 'primeng/divider';
 import { CallComponent } from './call/call.component';
 import { HttpClientModule } from '@angular/common/http';
+import {OverlayPanelModule} from 'primeng/overlaypanel';
 
 
 
@@ -56,6 +57,7 @@ console.warn("dashboard module loaded")
     DividerModule,
     RouterModule,
     HttpClientModule,
+    OverlayPanelModule,
     DashboardRoutingModule
   ]
 
