@@ -11,6 +11,8 @@
                 <div>
                     <i class="pi pi-bell"></i>
                 </div>
+                <p-divider layout="vertical">
+                </p-divider>
                 <div>
                     <img src="/assets/girl icon.jpg">
                 </div>
@@ -18,12 +20,13 @@
         </div>
         <div class="cards">
             <div class="card">
-                <p-card header="2,223,214" subheader="Total view" styleClass="p-card-shadow" (click)="oncardclick(1.3)">
+                <p-card header="2,223,214" subheader="Total view" styleClass="p-card-shadow" [style]="{'width': '12.5rem', 'margin-bottom': '2em'}" (click)="oncardclick(1.3)">
                     <ng-template pTemplate="header">
                     </ng-template>
                 </p-card>
 
             </div>
+            <p-divider layout="vertical"></p-divider>
 
             <div class="card">
                 <p-card header="1,312,022" subheader="Total Download" styleClass="p-card-shadow"
@@ -33,6 +36,7 @@
                 </p-card>
 
             </div>
+            <p-divider layout="vertical"></p-divider>
 
             <div class="card">
                 <p-card header="1,959,453" subheader="Total Read" styleClass="p-card-shadow" (click)="oncardclick(3.3)">
@@ -40,6 +44,8 @@
                     </ng-template>
                 </p-card>
             </div>
+            <p-divider layout="vertical"></p-divider>
+
             <div class="card">
                 <p-card header="234,032" subheader="Total comments" styleClass="p-card-shadow"
                     (click)="oncardclick(1.1)">
@@ -61,8 +67,9 @@
             <div>
                 <h5>Users</h5>
             </div>
-            <div>
-                <span class="pi">See more</span>
+            <div class="seemore">
+                <span (click)="onseemoreclick()">{{seeMore?"see More":"see Less"}}</span>
+
             </div>
 
         </div>

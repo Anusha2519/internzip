@@ -20,13 +20,8 @@ img {
 .images img {
     height: 2.5rem;
     width: 2.5rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     margin-top: .625rem;
-
-}
-
-.images {
-    display: flex;
 
 }
 
@@ -35,6 +30,15 @@ img {
     color: #0A376E;
     border: .0625rem solid #F5F5F5;
 
+}
+.images {
+    display: flex;
+    margin-right: 2.5rem;
+}
+
+.images .bell {
+    margin-right: .5rem;
+    margin-top: .6rem;
 }
 
 .mainheading h1 {
@@ -56,7 +60,7 @@ img {
     border: .1875rem solid #D4D4D4;
     margin-left: 5rem;
     height: 37.5rem;
-    width: 87.5rem;
+    width: 85.5rem;
 }
 
 .mainheading h3 {

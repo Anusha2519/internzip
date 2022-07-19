@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
       this.messageService.add({
         severity: 'success', summary: 'Success', detail: 'Submitted',
       });
+
     } else {
       this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Message Content' });
     }

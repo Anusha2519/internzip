@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api';
 
-
-
 @Component({
   selector: 'app-dashboard-graph',
   templateUrl: './dashboard-graph.component.html',
@@ -13,6 +11,8 @@ export class DashboardGraphComponent implements OnInit {
   basicData: any;
   basicOptions: any;
   products: Product[] = [];
+  seeMore: boolean = true
+  visible: boolean = false
 
   constructor(private messageService: MessageService) { }
 
@@ -32,7 +32,7 @@ export class DashboardGraphComponent implements OnInit {
 
       ],
     };
-this.products = tableData;
+    this.products = tableData.slice(0, 5);
   }
 
   oncardclick(i: number) {
@@ -49,6 +49,17 @@ this.products = tableData;
       ],  
     };
   }
+
+onseemoreclick() {
+  this.seeMore = !this.seeMore;
+  if (!this.seeMore) {
+    this.products = tableData.slice(0, 5);
+  } else {
+    this.products = tableData.slice(0, 3);
+
+  }
+}
+
 }
 
 export interface Product {
@@ -74,8 +85,15 @@ const tableData = [
     subheader: "21 September 2020"
 
   },
+  {
+    Name: 'Thomas H',
+    label: 'TH'
+  },
+  {
+    Name: 'Robert Hilington',
+    label: 'RH'
+  },
+
 ];
-
-
 
 
