@@ -25,9 +25,9 @@ export class UsersListComponent implements OnInit {
  }
   ngOnInit(): void {
   }
-  getcallFormData(data: any) {
-    console.warn(data)
-  } 
+  // getcallFormData(data: any) {
+  //   console.warn(data)
+  // } 
 
 
 }

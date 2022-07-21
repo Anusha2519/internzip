@@ -40,7 +40,7 @@
                         responsiveLayout="scroll"> -->
                     
                 </ng-template>
-                <ng-template pTemplate="body" let-call let-columns="callData" let-id="row">
+                <ng-template pTemplate="body" let-call let-columns="callData" let-rowIndex="rowIndex">
                     <tr>
                         <td>
                             <p-tableCheckbox></p-tableCheckbox>
@@ -53,10 +53,10 @@
 
                         <p-overlayPanel #op>
                             <ng-template pTemplate>
-                                delete
+                               <div  (click)="delete(rowIndex)" > delete</div> 
                             </ng-template>
                         </p-overlayPanel>
-                        <td class="pi pi-ellipsis-v" style="font-size: 1rem" (click)="op.toggle($event)"  (click)="delete(id)">{{id}}
+                        <td class="pi pi-ellipsis-v" style="font-size: 1rem" (click)="op.toggle($event)" >
                             
                         </td>
                     </tr>
