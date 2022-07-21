@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CallService } from 'src/app/call.service';
-
+// import { DashboardService } from 'src/dashboard.service';
+import { DashboardService } from '../dashboard.service';
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
@@ -9,21 +9,29 @@ import { CallService } from 'src/app/call.service';
 export class UsersListComponent implements OnInit {
   call: any;
 
-  constructor(private callData: CallService) {
+  constructor(private callData: DashboardService) {
 
-    callData.call().subscribe((data) => {
+    // callData.call().subscribe((data: any) => {
+    //   console.warn("data", data);
+    //   this.call = data
+    // });
+
+
+
+
+    // console.warn(this.call)
+  }
+  delete(row:string){
+    console.log(row);
+    this.call.splice(row,1);
+ }
+  ngOnInit(): void {
+    this.callData.call().subscribe((data) => {
       console.warn("data", data);
       this.call = data
     });
 
 
-    // console.warn(this.call)
-  }
-  delete(row: any){
-    console.log(row);
-    this.call.splice(row,1);
- }
-  ngOnInit(): void {
   }
   // getcallFormData(data: any) {
   //   console.warn(data)

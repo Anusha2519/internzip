@@ -22,7 +22,6 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import {TableModule} from 'primeng/table';
 import {AvatarModule} from 'primeng/avatar';
 import { DividerModule } from 'primeng/divider';
-import { CallComponent } from './call/call.component';
 import { HttpClientModule } from '@angular/common/http';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 
@@ -37,7 +36,7 @@ console.warn("dashboard module loaded")
     DashboardGraphComponent,
     ProfileComponent,
     UsersListComponent,
-    CallComponent
+    
   ],
   imports: [
     CommonModule,

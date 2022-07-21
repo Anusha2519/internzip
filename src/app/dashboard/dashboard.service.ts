@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
+
 @Injectable({
   providedIn: 'root'
 })
-export class CallService {
+export class DashboardService {
   url = "https://jsonplaceholder.typicode.com/users "
 
   constructor(private http:HttpClient) { }
@@ -11,4 +12,4 @@ export class CallService {
   {
     return this.http.get(this.url);
   }
-}
+}   
