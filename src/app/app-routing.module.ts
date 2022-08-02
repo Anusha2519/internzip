@@ -5,8 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: "", redirectTo: "account", pathMatch: "full" },
 
-
-
   {
     path: "account", loadChildren: () => import('./account/account.module')
       .then(mod => mod.AccountModule)
@@ -15,10 +13,7 @@ const routes: Routes = [
     path: "dashboard", loadChildren: () => import('./dashboard/dashboard.module')
       .then(mod => mod.DashboardModule)
   },
-  {
-    path: "practice", loadChildren: () => import('./practice/practice.module')
-      .then(mod => mod.PracticeModule)
-  }
+  
 
 ];
 
